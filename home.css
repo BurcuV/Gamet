@@ -1,0 +1,222 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+
+ 
+ 
+}
+body{
+    
+background-image: url(ımg/pawel-kadysz-CuFYW1c97w8-unsplash.jpg);
+
+}
+
+.container{
+    width: 95%;
+  margin: 0px auto;
+  
+  
+}
+.navs{
+    display: grid;
+    grid-template-areas: "nav_logo nav_menu nav_language";
+    grid-template-columns: max-content;
+    
+   
+}
+.nav_logo ,.nav_menu , .nav_menu ul ,.nav_language{
+    display: grid;
+  
+}
+ 
+.nav_menu{
+    grid-template-areas: "ul";
+
+}
+
+.nav_menu ul{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+}
+.nav_menu ul li{
+    display: grid;
+    list-style: none;
+    float: left;
+    padding-right: 5%;
+  
+
+    
+}
+.nav_menu ul li a{
+    text-decoration: none;
+    align-self: center;
+    color: white;
+    
+
+
+    
+}
+.mainbox{
+    display: grid;
+    grid-template-areas: "aside main";
+    grid-template-columns: 20% 60%;
+    
+    grid-gap: 5%;
+   
+}
+.main{
+    display: grid;
+    margin-top: 10%;
+}
+.aside{
+    
+    display: grid;
+    grid-template-areas: "button";
+    margin: 30% 0% 0% 5%;
+ 
+}
+.aside_button{
+    display: grid;
+    grid-template-rows: repeat(3,75px);
+    
+    grid-gap: 5%;
+  
+  
+}
+.aside_button button{
+    border: 1px solid blueviolet;
+    margin-top: 10%;
+    width: 100%;
+    padding: 10% 5%;
+    background: none;
+    color: white;
+   
+}
+.action{
+    display: grid;
+    grid-template-areas: "share"
+    "user"
+    "contact";
+    grid-template-rows: 10% 70% 20%;
+    
+}
+.share , .user , .contact{
+    display: grid;
+}
+.contact{
+   
+    margin-top: 20%;
+    grid-template-areas: "number"
+    "adress";
+    grid-gap: 4%;
+    
+
+}
+.number , .adress{
+    display: grid;
+}
+.adress{
+    grid-template-areas: "box1"
+    "box2"
+    "box3";
+    grid-gap: 5%;
+}
+.box1 , .box2 , .box3{
+    display: grid;
+}
+.box3{
+    grid-template-columns: repeat(2,40px);
+    margin: 1% 0% 5% 0%;
+}
+.share{
+    display: grid;
+    grid-template-areas: "txtshare btnshare";
+    width: 90%;
+    grid-template-columns: 60% 30%;
+    margin: 3% 0% 5% 7%;
+    grid-column-gap: 5%;
+}
+
+.txtshare  {
+    display: grid;
+    border: 1px solid white;
+    height: 40px;
+
+
+}
+.btnshare{
+height:63px ;
+
+}
+
+.user{
+    display: grid;
+    grid-template-areas: "user_img user_write user_icons";
+  margin: 2% 0%;
+  color: white;
+}
+.user_img , .user_write , .user_icons{
+    display: grid;
+}
+.user_icons{
+    grid-template-columns: repeat(2,20px);
+    align-self: center;
+    justify-self: center;
+}
+.user_write{
+    align-self: center;
+    justify-self: center;
+}
+.about{
+    display: grid;
+    width: 90%;
+
+    grid-template-columns: 30% 60%;
+  
+
+}
+.about_img , .about_write{
+    display: grid;
+
+}
+.about_write{
+    padding: 5% 0px 5% 5%;
+    font-size: 12px;
+    margin: 5% 2%;
+   
+  
+}
+.about_img{
+    border-bottom: 1px solid blueviolet;
+    padding: 2% 2%;
+   
+
+}
+.gift_tab{
+    display: grid;
+    grid-template-areas: "content_box1"
+    "content_box2";
+}
+.content_box1 , .content_box2{
+    display: grid;
+    grid-template-areas: "write"
+    "content";
+  margin-bottom: 5%;
+  padding: 5% 5%;
+}
+.write , .content{
+    display: grid;
+}
+
+  .content{
+      grid-template-columns: repeat(2,30px);
+      margin: 1% 0% 0% 2%;
+      
+  }
+    .content_box1{
+        border-left: 1px solid blueviolet;
+    }
+.content_box2{
+    border-right: 1px solid blueviolet;
+}

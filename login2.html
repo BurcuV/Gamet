@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login2.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    
+    <form>
+        <div class="wrıte">Hi Gamer, We were waiting  for you</div>
+        <label for="email" class="email">
+         E-mail:<input type="email" id="email" name="email">
+            </label>
+        <label for="passwd" >
+            <div class="giris">
+Password:<input type="password" id="passwd" name="passwd">
+              <i class="fa fa-eye parola" onClick="parolaGoster('passwd', this)">   </i>
+            </div> </label>
+        
+       <button class="sumbit">Sumbit</button>
+    </form> 
+    <script>
+		function parolaGoster(id, el) {
+		  let x = document.getElementById(id);
+		  if (x.type === "password") {
+			x.type = "text";
+			el.className = 'fa fa-eye-slash parola';
+		  } else {
+			x.type = "password";
+			el.className = 'fa fa-eye parola';
+		  }
+}
+	</script>
+</body>
+</html>

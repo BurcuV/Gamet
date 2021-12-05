@@ -1,0 +1,114 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: white;
+    
+   
+  }
+  body{
+    background-image: url(ımg/pawel-kadysz-CuFYW1c97w8-unsplash.jpg);
+  }
+.navs{
+    display: grid;
+    grid-template-areas: "nav_logo nav_menu nav_language";
+    grid-template-columns: max-content;
+    
+   
+}
+.nav_logo ,.nav_menu , .nav_menu ul ,.nav_language{
+    display: grid;
+  
+}
+ 
+.nav_menu{
+    grid-template-areas: "ul";
+
+}
+
+.nav_menu ul{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+}
+.nav_menu ul li{
+    display: grid;
+    list-style: none;
+    float: left;
+    padding-right: 5%;
+    grid-template-columns: repeat(5,75px);
+
+    
+}
+.nav_menu ul li a{
+    text-decoration: none;
+    align-self: center;
+    
+}
+
+.abouts{
+    
+    display: grid;
+    grid-template-areas: "about_text"
+    "mission"
+    "vision" ;
+    height: auto;
+ margin: 5% 5%;
+
+ 
+  
+  
+}
+.about_text , .mission , .vision{
+    display: grid;
+  
+
+
+    
+
+}
+.about_text{
+    grid-template-areas: "text_title"
+    "text_write";
+    grid-row-gap: 5px;
+    margin-bottom: 30px;
+    width: 80%;
+  
+   
+}
+.text_title , .text_write , .mission_title , .mission_write , .vision_title , .vision_write{
+    display: grid;
+}
+.mission{
+    grid-template-areas: "mission_title"
+    "mission_write";
+    grid-row-gap: 5px;
+    margin-bottom: 30px;
+ 
+}
+.vision{
+    grid-template-areas: "vision_title"
+    "vision_write";
+    grid-row-gap: 5px;
+    margin-bottom: 30px;
+    
+}
+.text_write , .mission_write , .vision_write{
+    opacity: 0.7;
+}
+.about_id{
+grid-template-areas: "id_img"
+"id_write";
+}
+.about_id{
+    display: grid;
+    grid-template-areas: "id_img"
+    "id_write";
+    justify-items:left;
+    align-items: center;
+    grid-gap: 2%;
+    margin: 5% 0% 0% 5%;
+}
+.id_img ,.id_write{
+display: grid;
+}
