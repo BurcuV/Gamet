@@ -7,7 +7,11 @@
 }
 
 body{
-  background-image: url(ımg/pawel-kadysz-CuFYW1c97w8-unsplash.jpg)
+  background-image: url(ımg/pawel-kadysz-CuFYW1c97w8-unsplash.jpg);
+  background-repeat: no-repeat;
+      
+  background-attachment: fixed;
+  background-size: 100%;
 }
 
 .navs{
