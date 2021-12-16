@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="home.js">
+    <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 
 </head>
 <body>
@@ -23,8 +25,13 @@
             <li><a href="question.html">Question</a></li>
         </ul>
         </div>
+        <div class="nav_language">
+          <div id="google_translate_element"></div>
+        </div>
         
-<div id="google_translate_element">df</div> </div>
+
+
+ </div>
 <div class="mainbox">
 <div class="aside">
     <div class="aside_button">
@@ -204,5 +211,13 @@
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
   </script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+    {pageLanguage: 'en', includedLanguages: 'ar,ru,tr'},
+    'google_translate_element'
+    );
+    }
+    </script>
 </body>
 </html>
